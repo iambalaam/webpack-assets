@@ -5,7 +5,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
     mode: 'production',
-    entry: './entrypoints/all.js',
+    stats: 'verbose',
+    entry: { all: './entrypoints/all.js' },
     module: {
         rules: [
             {
@@ -23,6 +24,6 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
-        new BundleAnalyzerPlugin()
+        new BundleAnalyzerPlugin({ analyzerMode: 'static', logLevel: 'silent' })
     ]
 }

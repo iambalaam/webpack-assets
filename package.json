@@ -1,0 +1,21 @@
+{
+  "name": "webpack-assets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/iambalaam/webpack-assets.git",
+  "author": "Guy Balaam <guybal@amazon.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.3",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.2.0"
+  }
+}
